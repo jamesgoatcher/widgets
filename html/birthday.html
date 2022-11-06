@@ -1,0 +1,42 @@
+<!-- Enter your birthday -->
+<div class="birthday header">Welcome to Age Restriction</div>
+<div class="birthday subhead">Enter year of birth</div>
+<div class="text-center">
+	<div class="birthday year-container">
+		<div class="year-div year-div-0 active" data-year-index="1">
+			<label for="year-input-1">
+				<span class="value" id="year-1"></span>
+				<span class="placeholder">Y</span>
+				<input type="tel" class="input" id="year-input-1">
+			</label>
+		</div>
+		<div class="year-div year-div-1" data-year-index="2">
+			<label for="year-input-2">
+				<span class="value" id="year-2"></span>
+				<span class="placeholder">Y</span>
+				<input type="tel" class="input" id="year-input-2">
+			</label>
+		</div>
+		<div class="year-div year-div-2" data-year-index="3">
+			<label for="year-input-3">
+				<span class="value" id="year-3"></span>
+				<span class="placeholder">Y</span>
+				<input type="tel" class="input" id="year-input-3">
+			</label>
+		</div>
+		<div class="year-div year-div-3" data-year-index="4">
+			<label for="year-input-4">
+				<span class="value" id="year-4"></span>
+				<span class="placeholder">Y</span>
+				<input type="tel" class="input" id="year-input-4">
+			</label>
+		</div>
+	</div>
+</div>
+<div class="birthday disclaimer">* You must be 21 years or older to enter</div>
+<div class="birthday error-message">That is not a valid year</div>
+<div class="birthday success">
+	<div>You’re in!</div>
+	<div class="retry" onclick="this.parentElement.classList.remove('active');">Retry?</div>
+</div>
+<div class="birthday close_page" onclick="let _this = this; _this.parentElement.classList.remove('active'); setTimeout(function() { _this.parentElement.remove(); }, 250);">[Close]</div>

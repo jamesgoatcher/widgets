@@ -1,0 +1,38 @@
+<!-- Close -->
+<div class="little_nemo close_page" onclick="let _this = this; _this.parentElement.classList.remove('active'); setTimeout(function() { _this.parentElement.remove(); }, 250);">[Close]</div>
+<!-- Intro video -->
+<video id="intro_video">
+	<source src="" type="video/mp4">
+</video>
+<!-- Main content -->
+<div class="logo"></div>
+<div class="holder">
+	<div id="sprite"></div>
+	<div id="friend"></div>
+	<div id="interaction_sequence">
+		<div id="interaction_curtain"></div>
+		<div id="dialogue_box"></div>
+	</div>
+</div>
+<div class="controller">
+	<div>
+		<div class="left-control">LEFT</div>
+		<div class="right-control">RIGHT</div>
+	</div>
+	<div>
+		<div class="left-control">&larr;/A</div>
+		<div class="right-control">D/&rarr;</div>
+	</div>
+	<div class="message">PRESS ENTER</div>
+	<div id="sound_toggle">SOUND ON</div>
+</div>
+<!-- Audio bg music, hidden -->
+<iframe src="./assets/nemo/silence.mp3" allow="autoplay" style="display: none;"></iframe>
+<audio class="audio" autoplay loop style="display: none;">
+  <source id="audio_src" src="" type="audio/mpeg">
+  <p>If you can read this then you fail at internetting for using a browser that does not support audio elements.</p>
+</audio>
+<audio class="audio_sfx" style="display: none;">
+  <source id="audio_sfx_src" src="" type="audio/mpeg">
+  <p>If you can read this then you fail at internetting for using a browser that does not support audio elements.</p>
+</audio>

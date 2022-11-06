@@ -1,0 +1,27 @@
+<div class="flashcards close_page" onclick="let _this = this; _this.parentElement.classList.remove('active'); setTimeout(function() { _this.parentElement.remove(); }, 250);">[Close]</div>
+<header class="flashcards">
+	<nav class="flashcards">
+		<div class="flashcards" id="title">English - Korean Flashcards</div>
+		<div class="flashcards" id="subtitle">Check the box to store difficult words into Saved Words</div>
+		<div class="flashcards" id="navigation">
+			<button id="reverse" class="trans-bg">Korean to English</button>
+			<button id="saved" class="trans-bg">Show Saved Words</button>
+			<!-- <button id="reset" class="trans-bg">Reset</button> -->
+			<br>
+			<select id="selection_dropdown">
+				<option value="no_filter">No Filter</option>
+				<option value="noun">Noun</option>
+				<option value="verb">Verb</option>
+				<option value="adjective">Adjective</option>
+				<option value="adverb">Adverb</option>
+				<option value="preposition">Preposition</option>
+				<option value="expression">Expression</option>
+			</select>
+			<button id="sort">Filter</button>
+		</div>
+	</nav>
+</header>
+<div class="flashcards" id="main">
+	<div id="parent"></div>
+	<div id="to_top" class="trans-bg">TOP</div>
+</div>

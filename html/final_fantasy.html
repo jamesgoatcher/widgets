@@ -1,0 +1,83 @@
+<!-- Close -->
+<div class="final_fantasy close_page" onclick="let _this = this; _this.parentElement.classList.remove('active'); setTimeout(function() { _this.parentElement.remove(); }, 250);">[Close]</div>
+<!-- Character Selection -->
+<div class="final_fantasy character_selection">
+	<div class="select_area"></div>
+	<div class="control_area">
+		<div class="logo"></div>
+		<div class="copy">Select 4 party members</div>
+		<button class="start" disabled>Start</button>
+	</div>
+</div>
+<!-- Battle Screen -->
+<div class="final_fantasy battle_screen">
+	<div class="relative full-bleed">
+		<div class="battle_window">
+			<div class="enemy_sprite">
+				<div class="damage"></div>
+			</div>
+			<div class="character_sprite">
+				<div class="damage"></div>
+			</div>
+			<div class="character_sprite">
+				<div class="damage"></div>
+			</div>
+			<div class="character_sprite">
+				<div class="damage"></div>
+			</div>
+			<div class="character_sprite">
+				<div class="damage"></div>
+			</div>
+		</div>
+		<div class="b-l-container">
+			<div class="enemy_window">
+				<div class="name"></div>
+			</div>
+			<div class="action_window">
+				<div class="fight">Fight</div>
+				<div class="special"></div>
+				<div class="item">Items</div>		
+			</div>
+		</div>
+		<div class="character_window">
+			<div class="character_line">
+				<div class="name"></div>
+				<div class="hp"></div>
+				<div class="gauge">
+					<div class="ct"></div>
+				</div>
+			</div>
+			<div class="character_line">
+				<div class="name"></div>
+				<div class="hp"></div>
+				<div class="gauge">
+					<div class="ct"></div>
+				</div>
+			</div>
+			<div class="character_line">
+				<div class="name"></div>
+				<div class="hp"></div>
+				<div class="gauge">
+					<div class="ct"></div>
+				</div>
+			</div>
+			<div class="character_line">
+				<div class="name"></div>
+				<div class="hp"></div>
+				<div class="gauge">
+					<div class="ct"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Audio bg music, hidden -->
+<iframe src="./assets/nemo/silence.mp3" allow="autoplay" style="display: none;"></iframe>
+<audio class="audio" autoplay loop style="display: none;">
+  <source id="audio_src" src="" type="audio/mpeg">
+  <p>If you can read this then you fail at internetting for using a browser that does not support audio elements.</p>
+</audio>
+<audio class="audio_sfx" style="display: none;">
+  <source id="audio_sfx_src" src="" type="audio/mpeg">
+  <p>If you can read this then you fail at internetting for using a browser that does not support audio elements.</p>
+</audio>

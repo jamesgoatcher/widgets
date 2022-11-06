@@ -1,0 +1,16 @@
+<header class="screen_saver header">
+	<div>Let’s Practice Korean Typing!</div>
+	<div class="screen_saver close_page" onclick="let _this = this; _this.parentElement.parentElement.classList.remove('active'); setTimeout(function() { _this.parentElement.parentElement.remove(); }, 250);"></div>
+</header>
+<div class="results-container"></div>
+<footer class="screen_saver footer">
+	<select class="difficulty">
+		<option value="easy">Easy</option>
+		<option value="medium">Medium</option>
+		<option value="hard">Hard</option>
+	</select>
+	<button class="start">Start</button>
+	<input type="text" class="input" id="user_input" placeholder="Type words here">
+	<div>Count: <span id="correct_word_count">0</span>/50</div>
+	<button class="results">Show Results</button>
+</footer>

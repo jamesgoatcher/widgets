@@ -1,0 +1,13 @@
+<div class="random_number close_page" onclick="let _this = this; _this.parentElement.classList.remove('active'); setTimeout(function() { _this.parentElement.remove(); }, 250);">[Close]</div>
+<div class="random_number holder">
+  <div class="rain front"></div>
+  <div class="rain back"></div>
+</div>
+<footer class="random_number controls">
+	<div>
+		<span>Flood</span>
+		<input type="range" id="rain_amount">
+		<span>Sprinkles</span>
+		<button id="init">Make it rainy</button>
+	</div>
+</footer>
